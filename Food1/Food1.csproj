@@ -181,10 +181,6 @@
     <Compile Include="Migrations\202412160533556_AddRoleToUserRole.Designer.cs">
       <DependentUpon>202412160533556_AddRoleToUserRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202412171004263_AddCartTable.cs" />
-    <Compile Include="Migrations\202412171004263_AddCartTable.Designer.cs">
-      <DependentUpon>202412171004263_AddCartTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202412171010414_changeCartTable.cs" />
     <Compile Include="Migrations\202412171010414_changeCartTable.Designer.cs">
       <DependentUpon>202412171010414_changeCartTable.cs</DependentUpon>
@@ -348,9 +344,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202412160533556_AddRoleToUserRole.resx">
       <DependentUpon>202412160533556_AddRoleToUserRole.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202412171004263_AddCartTable.resx">
-      <DependentUpon>202412171004263_AddCartTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202412171010414_changeCartTable.resx">
       <DependentUpon>202412171010414_changeCartTable.cs</DependentUpon>
