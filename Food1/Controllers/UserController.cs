@@ -28,6 +28,29 @@ namespace Food1.Controllers
         }
 
         [HttpGet]
+        [Route("api/User/GetByName")]
+        public IHttpActionResult GetUserByName(string name)
+        {
+            using (var db = new ApplicationDbContext())
+            {
+                var user = db.Users.Where(u => u.Name == name).Select(u => new
+                             {
+                                 u.Id,
+                                 u.Name,
+                                 u.Email
+                             }).SingleOrDefault();
+
+                if (user == null)
+                {
+                    return NotFound(); 
+                }
+
+                return Ok(user); 
+            }
+        }
+
+
+        [HttpGet]
         public IHttpActionResult GetUsers()
         {
             using (var db = new ApplicationDbContext())
